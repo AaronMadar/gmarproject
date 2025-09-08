@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react'
 import '../style/Post.css'
 
 
@@ -6,8 +7,9 @@ import '../style/Post.css'
 type propspost = { url: string, description: string, likes: number, username: string, time: string, key:any }
 
 export default function Post({ key,url, description, likes, username, time }: propspost) {
-
-
+   
+    const [numlike,setNumlike] = useState(likes)
+    let hasLiked = useRef(false)
 
     return (
         <section className="post-box" key={key}>
@@ -15,7 +17,8 @@ export default function Post({ key,url, description, likes, username, time }: pr
             <img src={url} className="img-post" />
             <p className="text-post">{description}</p>
             <section className="meta-post">              
-                <button className="likes-post">{likes} Likes</button>
+                <button className="likes-post" onClick={
+                    ()=>{if(!hasLiked.current){setNumlike(numlike+1) ;hasLiked.current=true}}}>{numlike} Likes</button>
                 <p className="time-post">posted : {time}</p>               
             </section>
         </section>
