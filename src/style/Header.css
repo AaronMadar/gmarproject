@@ -28,3 +28,37 @@ left: 20%;
 
 
 }
+
+@media only screen and (max-width: 750px) {
+ .header {
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.237);
+    padding: 4px;
+    
+
+}
+
+.logo{
+    height: 65px;
+    width: 65px;
+    border-radius: 9px;
+    position: relative;
+    left: 0px;
+}
+
+.slogan{
+font-size: 19px;
+color: rgba(1, 63, 110, 0.516);
+position: relative;
+left: 4%;
+
+
+
+}
+}
