@@ -1,15 +1,17 @@
-import {data} from "../allpost.js"
+import data from "../Assets/Data/data.json"
 import Post from "./Post.tsx"
 import '../style/Post.css'
 
-export default function Actuality(){ 
+export default function Actuality(){  
     
-    
+    const dataJs = data
+
 
     return (
         <section>
-        { data.map(obj => (
-            <Post url={obj.url}  description={obj.description} likes={obj.likes} username={obj.username} time={obj.time} />
+        { dataJs.map(obj => (
+            <Post key={obj.id} url={obj.url}  description={obj.description} likes={obj.likes} 
+            username={obj.username} time={obj.time} />
             ))}
         </section>  
     )   
