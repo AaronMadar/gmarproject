@@ -19,7 +19,7 @@ export default function Header(){
 
             <section className='sectionloginlogout'>
                 <img src={logologin} alt="loginlogo" className='logologin' />
-                <img src={logologout} alt="logologout" className='logologout' onClick={()=> navigate("/HomePage")}/>
+                <img src={logologout} alt="logologout" className='logologout' onClick={()=> navigate("/")}/>
             </section>
         </header>
         </>
