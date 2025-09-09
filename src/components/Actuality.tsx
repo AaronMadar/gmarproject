@@ -1,6 +1,7 @@
 import Post from "./Post.tsx"
 import '../style/Post.css'
 import { useEffect, useState } from "react";
+import AddPost from "./AddPost.tsx";
 
 
 
@@ -34,7 +35,9 @@ export default function Actuality(){
   }
 
     return (
+
         <section className="actuality">
+          <AddPost/>
         { arrayPost.map(obj => (
             <Post key={obj.id} url={obj.url}  description={obj.description} likes={obj.likes} 
             username={obj.username} time={obj.time} />

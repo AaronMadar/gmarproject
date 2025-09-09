@@ -12,12 +12,13 @@ import Actuality from './components/Actuality.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode><BrowserRouter>
-    <Layout>
-      <App />
+  <StrictMode>
+    <BrowserRouter>
+    <Layout>      
     </Layout>
     <Routes>
-      <Route path="/HomePage" element={<HomePage />} />
+    
+      <Route path="/" element={<HomePage />} />
       <Route path="/feed" element={<Actuality/>}/>
     </Routes>
   </BrowserRouter>

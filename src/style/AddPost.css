@@ -1,0 +1,36 @@
+.addpost{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+    width: 600px;
+    height: 150px;
+    box-sizing: content-box;    
+ border: 2px solid #4f87ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgb(121, 121, 121);
+  margin: 10px;  
+  background-color: rgb(188, 218, 255);
+  cursor: pointer;     
+  color:rgb(0, 0, 0)
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.inputap {
+  width: 400px;
+  height: 35px;
+
+}
+
+.btnform{
+  background-color: rgb(1, 61, 110);
+  color: #ffffff;
+  border-radius: 9px;
+  padding: 5px 10px;
+}
