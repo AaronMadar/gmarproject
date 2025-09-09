@@ -4,6 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.237);
     padding: 4px;
@@ -11,23 +12,64 @@
 
 }
 
+.sectionlogoslogan{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:50px   ;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
 .logo{
     height: 75px;
     width:75px;
     border-radius: 9px;
     position: relative;
-    left: 2%;
+   
 }
 
 .slogan{
 font-size: 19px;
 color: rgba(1, 63, 110, 0.516);
 position: relative;
-left: 20%;
+}
 
 
+
+
+.sectionloginlogout{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right: 50px;
+    gap:25px
 
 }
+
+
+.logologin {
+    height: 30px;
+    width: 30px;
+
+}
+
+.logologout {
+    height: 30px;
+    width:30px
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 750px) {
  .header {

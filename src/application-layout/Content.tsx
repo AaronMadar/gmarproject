@@ -1,4 +1,4 @@
-export default function Content({children}){
+export default function Content({children}:any){
 
 
     return (
