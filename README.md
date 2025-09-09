@@ -8,4 +8,7 @@ List of components -->
 The ACTUALITY component represents the feed, where each user's posts are published. It is a series of Post components. -->
 
 <!-- 
-Dans cette application , en cliquant sur le logo on accede directement a la HomePage qui correspod au composant <Actuality/> -->
+Dans cette application , en cliquant sur le logo on accede directement au feed si on est authentifie qui correspod au composant <Actuality/> sinon on sera amenee a la homepage qui est une page d'accueil -->
+
+
+
