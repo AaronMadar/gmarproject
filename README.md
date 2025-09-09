@@ -6,3 +6,6 @@ List of components -->
 <!-- The POST component represents the information post, it can contain image, text, holds the user name, and the timestamp when the post was created -->
 <!-- 
 The ACTUALITY component represents the feed, where each user's posts are published. It is a series of Post components. -->
+
+<!-- 
+Dans cette application , en cliquant sur le logo on accede directement a la HomePage qui correspod au composant <Actuality/> -->

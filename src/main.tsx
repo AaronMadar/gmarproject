@@ -1,27 +1,25 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css'
 import App from './App.tsx'
 import Layout from './application-layout/Layout.tsx'
-import Content from './application-layout/Content.tsx'
-import Actuality from './components/Actuality.tsx';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage.tsx'
+import Actuality from './components/Actuality.tsx'
+
 
 
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <StrictMode><BrowserRouter>
     <Layout>
-    <Content>
-      <App>       
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Actuality/>}/>
-    </Routes>
-    </BrowserRouter>
-
-      </App>
-      </Content>
+      <App />
     </Layout>
+    <Routes>
+      <Route path="/HomePage" element={<HomePage />} />
+      <Route path="/feed" element={<Actuality/>}/>
+    </Routes>
+  </BrowserRouter>
   </StrictMode>,
 )

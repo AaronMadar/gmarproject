@@ -1,17 +1,19 @@
 
 import './App.css'
 
-function App({children}) {
 
 
-  return (
-    <>
-           
-       {children}      
-     
-  
-   
-    </>
+
+function App() {
+
+
+  return (  
+        <>
+        
+        </>
+            
+         
+    
   )
 }
 
