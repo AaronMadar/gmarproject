@@ -1,9 +1,13 @@
+import Login from "./Login";
+import Title from "./Title";
+
 export default function HomePage(){
 
 
     return (
         <>
-        <h1>HELLO HOME PAGE</h1>
+        <Title text={"Welcome in LinKod"}/>    
+        <Login/>
         </>
     )
 }

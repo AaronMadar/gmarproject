@@ -1,0 +1,19 @@
+.formsub {
+     display: flex;
+    flex-direction: column;
+    gap:20px;
+    height:50px;
+    width:350px;    
+    align-items: center;
+
+}   
+
+.btnsubscribe{
+      background-color:rgb(1, 61, 110);
+    color: white;
+    height: 25px;
+    width: 100px;   
+    border-radius: 9px;
+}
+
+

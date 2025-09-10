@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
     width: 600px;
-    height: 150px;
+    height: 200px;
     box-sizing: content-box;    
  border: 2px solid #4f87ff;
   padding: 15px;
@@ -28,9 +28,52 @@
 
 }
 
+.logoUpload{
+  height: 25px;
+  width: 25px;
+}
+
 .btnform{
   background-color: rgb(1, 61, 110);
   color: #ffffff;
   border-radius: 9px;
   padding: 5px 10px;
+}
+
+
+@media only screen and (max-width: 750px){
+
+  .addpost{
+    width: 300px;
+    height: 200px;
+    box-sizing: content-box;    
+ 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+}
+
+.inputap {
+  width: 260px; 
+  height: 35px;
+
+}
+
+.logoUpload{
+  height: 20px;
+  width: 20px;
+}
+
+.btnform{
+  background-color: rgb(1, 61, 110);
+  color: #ffffff;
+  border-radius: 9px;
+  width: 200px;
+  padding: 5px 10px;
+}
+
 }

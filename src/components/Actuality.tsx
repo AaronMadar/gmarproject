@@ -18,13 +18,13 @@ export default function Actuality(){
         setArrayPost(data); 
 
       } catch (error) {
-        console.error('Erreur lors de la récupération des données :', error);
+        console.error('Error Request:', error);
       } finally {
-        setLoading(false); // Indique que le chargement est terminé, qu'il y ait eu une erreur ou non
+        setLoading(false); 
       }
     };
 
-    fetchData(); // Appelle la fonction de récupération des données
+    fetchData();
   }, []);
 
 
