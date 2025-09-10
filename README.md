@@ -11,12 +11,33 @@ The HomePage component is the page you will land on when you are not logged in a
 
 <!-- The <AddPost> component is the part with which the client can share text and images to the community. It is a component that is part of news, like Facebook and all social networks where you can share posts, and the feed is located just below. -->
 
+<!-- the <subscribe> component allows you to subscribe
+
+the <login> component allows you to log in
+ -->
+
 
 
 <!-- 
 Dans cette application , en cliquant sur le logo on accede directement au feed si on est authentifie qui correspod au composant <Actuality/> sinon on sera amenee a la homepage qui est une page d'accueil -->
 
 
+<!-- 
+the context folder corresponds to the authentication which will be accessible in all components, if the person is authenticated, they will have access to the feed -->
 
 
+
+
+
+<!-- Server side
+
+The server is divided into two routers: router post, and router user, each managing its own domain. -->
+
+
+
+
+
+<!-- Database side
+
+In this application, we don't actually use a database; we save and retrieve our data from the Assets > Data > Data.user or data.post folders, which are JSON files. -->
 
