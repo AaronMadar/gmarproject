@@ -1,0 +1,41 @@
+.sectionlogin{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.divbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.formlogin{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    height:50px;
+    width:250px;
+    
+    
+}
+
+
+
+.btnaction {
+    background-color:rgb(1, 61, 110);
+    color: white;
+    height: 25px;
+    width: 100px;   
+    border-radius: 9px;
+}
+
+.btnsub{
+        background-color: #00000000;
+        border: none;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+}
+
+

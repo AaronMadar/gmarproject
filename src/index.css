@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   margin: 0;
   align-items: center;
+  
 
 }
 
@@ -15,7 +16,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+   align-items: center;
   background-color: rgb(226, 239, 248);
   gap:20px;   
+}
+
+@media only screen and (max-width: 750px){
+
 }
