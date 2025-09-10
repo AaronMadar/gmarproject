@@ -5,6 +5,7 @@ import { corsController } from './Controller/CorsController.js'
 
 
 const server = express()
+server.use(express.json())
 corsController(server)
 express.static('public')
 server.use('/api/post',router_post)
