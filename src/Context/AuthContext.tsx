@@ -14,7 +14,7 @@ const [isAuthenticated, setIsAuthenticated]= useState(false)
 
 const login = ()=> setIsAuthenticated(true);
 
-const logout = ()=> setIsAuthenticated(false);
+const logout = ()=> { localStorage.removeItem("token") ; setIsAuthenticated(false);}
 
 
 
