@@ -26,11 +26,11 @@ export default function Header() {
                     <img src={logologin} alt="loginlogo" className='logologin' onClick={() => navigate('/Login')} />
                     <img src={logologout} alt="logologout" className='logologout' onClick={() => {
                         logout()
-                        navigate("/")
+                        navigate("/feed")
                     }
                     } />
                 </section>
             </header>
         </>
-    )
+    )   
 }
