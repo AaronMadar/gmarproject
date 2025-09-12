@@ -42,7 +42,7 @@ export default function Actuality() {
 
     }
 
-
+    
   }
   else {
     return <HomePage />

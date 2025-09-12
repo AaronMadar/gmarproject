@@ -10,7 +10,7 @@ import Actuality from './Actuality'
 
 export default function Login() {
 
-    const { isAuthenticated, login, logout } = useContext(AuthContext)
+    const { login } = useContext(AuthContext)
     const navigate = useNavigate()
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
@@ -23,14 +23,15 @@ export default function Login() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(userdetails),
         });
-        if (!response.ok) {
+        let data = await response.json()
+        if (!data.success) {
             return <div className='error'>`${response.success} , ${response.response}`</div>
         }
-        localStorage.setItem("token", response.token)
+        localStorage.setItem("token", data.token)
         login()
-        return <Actuality />
+        navigate("/feed")
 
-    }
+    }           
 
 
     return (

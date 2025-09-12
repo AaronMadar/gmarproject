@@ -1,11 +1,13 @@
 import { createContext, useState } from "react";
 
 
-export const AuthContext = createContext(false);
+export const AuthContext = createContext({}as {
+    isAuthenticated:any ,login :any,logout:any
+});
 
 
 
-export default function AuthProvider({children}){
+export default function AuthProvider({children} : {children: any}){
 
 //  check if connected or by input or by token   
 const [isAuthenticated, setIsAuthenticated]= useState(false)
